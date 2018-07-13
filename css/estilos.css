@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz');
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;   
+    max-width: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+.contenedor{
+    margin: auto;
+    width: 99%;
+}
+/*--------------------*estilos del header--------------------**/
+.header{
+   height: 60px; 
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between
+}
+.logo, .icon-menu1{
+    margin: 5px;
+    color :aliceblue;
+}
+.icon-menu1 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #6350C5;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*------------------estilos del menu------------------*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: #6350C5;
+    color: #fff;
+    text-decoration: none;
+}
+.menu__link:hover, .select {
+    background: #fff;
+    color: #6350C5;
+}
+.mostrar{
+    left:0;
+}
+/*---------------------Estilos del banner---------------------*/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+    
+}
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    text-align: center;
+    width: 100%;   
+}
+.banner__parrafo {
+    display: none;
+}
+/*--------------------Estilos de info--------------------*/
+.info__columna {
+    background: #6350C5;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+/*---------------------Estilos del footer---------------------*/
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align:center;
+}
+.icon-facebook{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px; 
+}
+.icon-linkedin{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px; 
+}
+
+.icon-correo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+.footer [classᶺ="icon-"]{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+}
+/*--------------Estilos responsive--------------*/
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+    }
+    .banner__titulo{
+        font-size: 30px;
+        margin: 5px 0 ;
+    }
+    .banner__parrafo{
+        display: block;
+        font-size: 18px;
+        margin: 7px 0;
+        
+    }
+    .informacion {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -95px;
+        
+    }
+    .info__columna{
+        width: 32%;
+    }
+    .footer [classᶺ="icon-"]{
+        margin: 0 10px;
+    }
+}
+@media(min-width:768px){
+    .banner__titulo{
+        font-size: 50px;
+    }
+    .info_titulo{
+        font-size: 30px;
+    }
+}
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+   
+    .banner__titulo{
+        font-size: 80px;
+        
+    }
+    .info_titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .banner .contenedor{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+      
+    }
+    .banner__parrafo {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    text-align:justify;
+    width: 50%; 
+    }
+    .icon-menu1{
+        display: none;
+        
+    }
+    .nav{
+        position: static;
+        width: auto;
+        font-size: 20px;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu__link{
+        background: none;
+    }
+    .select{
+        background: #6350C5;
+        color: #fff;
+    }
+}
+@media(min-width:1280px){
+    
+    .contenedor{
+        width: 1200px;
+    }
+    .banner .contenedor{
+        top:35%;
+    }
+    .informacion{
+        margin-top: -250px;
+    }
+    .info__columna{
+        padding: 20px;
+    }
+    
+}
+    
+    
+   
